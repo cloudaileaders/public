@@ -1,0 +1,47 @@
+# robots.txt for https://cloudaileaders.com/
+# Last updated: 2023-07-01
+
+# Default rules for all robots
+User-agent: *
+Crawl-delay: 10
+Allow: /
+
+# Allow search crawlers to discover the sitemap
+Sitemap: https://cloudaileaders.com/sitemap.xml
+
+# Block known problematic bots
+User-agent: CazoodleBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: dotbot
+User-agent: dotbot/1.0
+Disallow: /
+
+User-agent: Gigabot
+Disallow: /
+
+# Block additional low-value or aggressive crawlers
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+# Prevent crawling of admin or private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /includes/
+Disallow: /cgi-bin/
+Disallow: /*?*
